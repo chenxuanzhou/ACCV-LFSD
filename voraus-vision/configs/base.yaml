@@ -1,5 +1,5 @@
-# Frozen experiment configuration for SmallData-CV 2026 / voraus-vision.
-# Anything in this file is fixed before the main runs (pre-registration, plan sec. 8).
+# Frozen experiment configuration for voraus-vision (ACCV 2026 LFSD-CV).
+# Anything in this file was fixed before the main runs (internal analysis plan).
 
 dataset:
   path: ../data/voraus-ad-dataset-100hz.parquet

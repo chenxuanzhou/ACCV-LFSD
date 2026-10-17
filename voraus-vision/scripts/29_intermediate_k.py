@@ -1,6 +1,6 @@
 """Intermediate sample budgets k in {32, 64, 128, 256}  (added in revision).
 
-The few-shot curve of the submission jumps from k=16 to k=all (758), so the
+The few-shot grid jumps from k=16 to k=all (758), so the
 claim that the trained reference needs "hundreds" of recordings rested on an
 untested interval.  This script fills it in for the three method families of
 the few-shot figure, on new frozen index sets drawn from the same bank pool:

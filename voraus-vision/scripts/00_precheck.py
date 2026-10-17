@@ -1,11 +1,11 @@
-"""Step 0 pre-checks for the SmallData-CV 2026 plan.
+"""Step 0 pre-checks on the voraus-AD dataset.
 
 Verifies dataset facts that every downstream design decision depends on:
 channel count/semantics, sampling rate, recording length distribution,
 official train/test split, per-category test counts, and whether
 time-interval ground truth for real anomalies exists.
 
-Writes results/00_precheck/precheck.json and precheck.md.
+Writes results/00_precheck/precheck.json and per_sample_meta.csv.
 """
 
 import json

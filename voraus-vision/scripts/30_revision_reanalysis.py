@@ -1,4 +1,4 @@
-"""Zero-compute re-analyses requested in the simulated review (revision round 1).
+"""Zero-compute re-analyses of the main grid (added in revision).
 
   a  few-shot curve with seed dispersion and with ONE FIXED detector per domain
      (removes the best-of-six multiplicity from the image-vs-signal comparison)

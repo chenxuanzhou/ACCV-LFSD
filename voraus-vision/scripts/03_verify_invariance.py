@@ -159,8 +159,10 @@ for enc_id, fn in ENCODERS.items():
 
 df = pd.DataFrame(rows)
 
-# Predicted-blind table, revised against the first pass (see report sec. "theory
-# corrections").  Only cells where the *forced* variant is used are scored.
+# Predicted-blind table as revised after a first pass of this script (see the
+# E6 x S1 note below).  It is not the original prediction list of the internal
+# analysis plan, to which the confirmed/refuted counts of the paper (Sec. 3) refer.
+# Only cells where the *forced* variant is used are scored.
 PREDICTED_BLIND = {
     ("E1", "S1"), ("E1", "S2"), ("E1", "S3"), ("E1", "S3b"),
     ("E3", "S1"), ("E3", "S3"), ("E3", "S3b"),

@@ -1,8 +1,12 @@
 """Fit and freeze every train-derived statistic the encoders need.
 
-Fitted on the memory-bank pool only (train normal minus the 20% injection
-holdout), so nothing an encoder knows can leak from the windows that later
-receive synthetic faults.
+PCA-3, the PCA min/max, the RP distance scale, the STFT normalisation and the
+E4 channel choice are fitted on the 758-window memory-bank pool (train normal
+minus the 20% injection holdout).  The per-channel mean and s.d. used for
+z-scoring are copied from results/01_preprocess/norm_stats.json, i.e. from all
+948 training recordings, which include the clean versions of the 190 holdout
+windows that later receive synthetic faults (see 32_kshot_statistics.py for
+statistics estimated from the k bank windows only).
 
 Writes results/02_context/context.npz and context_summary.json.
 """

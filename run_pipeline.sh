@@ -1,5 +1,6 @@
 #!/usr/bin/env bash
-# Pipeline driver.  Run from anywhere; paths are resolved relative to this file.
+# Pipeline driver.  Run from any directory (not via a symlink): paths are
+# resolved relative to this file.
 #
 #   ./run_pipeline.sh reanalysis   CPU only, no dataset needed: recompute every
 #                                  AUROC table, verdict and summary from the
@@ -22,6 +23,10 @@ run() { echo; echo "=== $* ==="; "$PY" "$S/$1" "${@:2}"; }
 FROZEN="results/01_preprocess/fewshot_indices.json results/01_preprocess/holdout_normal.json
 results/01_preprocess/kept_channels.json results/29_intermediate_k/fewshot_indices_ext.json"
 check_frozen() {
+  if ! git rev-parse --is-inside-work-tree >/dev/null 2>&1; then
+    echo "[frozen] not a git checkout -- cannot compare the index sets with the released ones" >&2
+    return 0
+  fi
   if git diff --quiet -- $FROZEN; then
     echo "[frozen] index sets unchanged"
   else
@@ -68,7 +73,7 @@ full() {
   run 01b_cache_raw_holdout.py
   run 02_fit_context.py
   run 03_verify_invariance.py
-  run 05_render.py                   # ~14 GB of images; skips encodings already rendered
+  run 05_render.py                   # ~15 GB of images; skips encodings already rendered
   run 06_run_detectors.py            # GPU; skips (encoding, detector) pairs whose scores exist
   run 12_extend_controls.py          # GPU; footprint-matched controls S7m/S8m/S7g/S8g
   run 15_winclip.py                  # GPU
@@ -82,7 +87,11 @@ full() {
   run 08b_grid_ablation.py
   run 08c_layer_ablation.py
   run 09_signal_baselines.py
-  run 10_attribution.py              # needs the anomaly maps written by 06
+  if compgen -G "results/06_scores/*/*_maps.npz" >/dev/null; then
+    run 10_attribution.py            # needs the anomaly maps written by 06
+  else
+    echo; echo "=== skip 10_attribution.py: no anomaly maps (delete results/06_scores/ to rescore) ==="
+  fi
   run 11_variance_decomposition.py
   run 14_channel_permutation.py
   run 17_affine_content.py

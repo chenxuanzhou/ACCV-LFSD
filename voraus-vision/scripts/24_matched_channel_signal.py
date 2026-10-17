@@ -1,4 +1,4 @@
-"""Matched-channel signal-domain baselines (NEXT-STEPS 0.2).
+"""Matched-channel signal-domain baselines.
 
 The obvious attack on E11 is that its advantage comes from using 28 hand-picked
 channels rather than from the imaging step.  This runs signal-domain detectors

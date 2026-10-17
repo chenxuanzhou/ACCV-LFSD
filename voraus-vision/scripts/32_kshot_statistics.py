@@ -1,4 +1,4 @@
-"""k-shot normalisation statistics (added in revision; reviewers R1-W2 / R3-W5).
+"""k-shot normalisation statistics (added in revision).
 
 In the main grid the z-score encodings (E2, E11) and the signal baseline use the
 per-channel mean and s.d. of norm_stats.json, which is fitted on all 948

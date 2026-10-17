@@ -4,7 +4,7 @@ P-A  real anomalies: per-category AUROC against all test normals, exactly the
      official protocol used by MVT-Flow's train.py, plus AUPRC and F1-max.
 P-B  synthetic faults: AUROC of injected vs clean holdout, per (fault, param),
      with a bootstrap CI so that the blind / partial / visible verdict follows
-     the pre-registered rule in plan sec. 8.
+     the rule of the internal analysis plan (not published).
 
 Outputs results/07_eval/{pa_percategory,pa_summary,pb_sweep,pb_verdict}.csv
 """
@@ -28,7 +28,7 @@ man = pd.read_csv(REN / "manifest.csv")
 gt = pd.read_csv(REN / "injection_gt.csv")
 CATEGORIES = sorted(man.loc[(man["kind"] == "test") & man["anomaly"], "category"].unique())
 N_BOOT = 1000
-# Pre-registered thresholds (plan sec. 8).
+# Thresholds of the internal analysis plan (not published).
 BLIND_UPPER = 0.55
 VISIBLE_LOWER = 0.70
 
@@ -181,7 +181,7 @@ pa_sum = (pa[pa["category"] == "__MEAN_OF_CATEGORIES__"]
           .reset_index())
 pa_sum.to_csv(OUT / "pa_summary.csv", index=False)
 
-# ---------------------------------------------- pre-registered blind verdict
+# --------------------------------------------------- planned blind verdict
 # Amended after the control diagnostic (results/08_diagnose/control_sweep.csv):
 # a "blind" verdict is only interpretable as invariance if the positive control
 # with the *same spatial footprint* passes on the same (encoding, detector).  An

@@ -1,6 +1,6 @@
 """Corrected blind / partial / visible verdicts.
 
-The pre-registered rule (plan sec. 8) declares a cell blind when the bootstrap
+The planned rule (internal analysis plan, not published) declares a cell blind when the bootstrap
 95% CI upper bound is below 0.55 on every detector.  With the holdout set this
 study can afford -- 190 injected against 190 clean windows -- that rule is
 unattainable by construction:
@@ -10,8 +10,8 @@ unattainable by construction:
 
 Every provably blind cell in this study returns AUROC exactly 0.5000 -- the
 rendered images are byte-identical, so the two score sets are the same multiset
--- and still fails the pre-registered test.  The threshold needed n >= 260 per
-side, or should have been set at 0.56.  Both the pre-registered verdict and a
+-- and still fails the planned test.  The threshold needed n >= 257 per
+side, or should have been set at 0.56.  Both the planned verdict and a
 corrected one are reported; the deviation is not hidden.
 
 Three criteria, in decreasing strength:
@@ -64,7 +64,7 @@ json.dump({
 }, open(OUT / "power.json", "w"), indent=2)
 print(f"[power] n_pos={n_pos} n_neg={n_neg}  SE={se:.4f}  "
       f"achievable CI upper at AUROC 0.5 = {0.5 + 1.96*se:.4f}")
-print(f"[power] pre-registered threshold {PREREG_BLIND_UPPER} is "
+print(f"[power] planned threshold {PREREG_BLIND_UPPER} is "
       f"{'attainable' if 0.5 + 1.96*se < PREREG_BLIND_UPPER else 'NOT attainable'}; "
       f"needs n >= {int(np.ceil(2 / (12 * ((PREREG_BLIND_UPPER - 0.5) / 1.96) ** 2)))} per side")
 
@@ -132,6 +132,6 @@ print()
 print(piv.to_string())
 print()
 print(df["verdict"].value_counts().to_string())
-print(f"\n[note] pre-registered rule would certify {int(df['prereg_blind'].sum())} cells; "
+print(f"\n[note] planned rule would certify {int(df['prereg_blind'].sum())} cells; "
       f"corrected rule certifies {int(df['corrected_blind'].sum())}; "
       f"byte-identity proves {int(df['byte_identical'].sum())}")

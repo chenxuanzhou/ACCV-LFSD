@@ -1,12 +1,9 @@
 """Is fixed-length resampling the dominant blind spot?
 
-MVT-Flow reproduces at AUROC 0.922 through the official pipeline, which pads
-every recording with zeros to the train maximum.  Retrained on the fixed-length
-L=512 windows the encoders consume, the same model reaches only 0.651
-(results/09_signal/r1_scores.parquet).  Padding preserves how long a recording
-was; resampling destroys it -- which is exactly P4.  If that single difference
-accounts for the gap, then length normalisation, not the more elaborate
-invariances, is the costliest thing the imaging recipe does.
+The official MVT-Flow pipeline pads every recording with zeros to the train
+maximum, which preserves how long a recording was; the encoders resample to a
+fixed length, which destroys it (duration blindness).  This script measures what
+that costs the trained signal-domain model on its own inputs.
 
 Three arms, identical model, identical 758-recording training set:
 

@@ -9,7 +9,7 @@ channel.
 
 This script adds S7m/S8m (8 channels) and S7g/S8g (all channels) to the P-B
 protocol, at the same k=4 x 5 seeds and the same five detectors as the main run,
-so the pre-registered blind/visible rule can be applied to a matched control.
+so the planned blind/visible rule can be applied to a matched control.
 
 It renders and scores only the new rows: the memory banks are unchanged, so the
 detectors are refitted from bank images already present in images.npy.

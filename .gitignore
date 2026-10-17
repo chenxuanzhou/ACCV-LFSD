@@ -24,3 +24,6 @@ results/08_diagnose/control_sweep.csv
 *.pth
 results/04_mvtflow_repro/
 results/10_attribution/
+
+# Console logs of individual runs
+results/**/*.log

@@ -6,9 +6,9 @@ statement about encodings from a statement about this dataset being hard.
 
 R1  MVT-Flow, the dataset's official SOTA, retrained here on the *same* 758
     memory-bank-pool windows at the *same* L=512 the encoders consume.  The
-    official reproduction (results/04_mvtflow_repro, AUROC 0.922) uses the
-    official pipeline instead -- native length, zero padding, all 948 train
-    recordings -- and is reported separately as the sanity anchor.  Retraining
+    paper's MVT-Flow numbers come from the official pipeline instead -- native
+    length, zero padding -- in 20_r1_gap.py, 22_mvtflow_fewshot.py and
+    29_intermediate_k.py; R1 here is not used in the paper.  Retraining
     on the bank pool matters because the holdout windows that receive synthetic
     faults must never have been seen during training.
 
