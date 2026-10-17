@@ -1,0 +1,11 @@
+{
+  "n_pos": 190,
+  "n_neg": 190,
+  "se_auroc_under_null": 0.02965638860417012,
+  "ci_half_width": 0.05812652166417343,
+  "achievable_ci_upper_at_auroc_half": 0.5581265216641734,
+  "prereg_threshold": 0.55,
+  "prereg_threshold_attainable": false,
+  "n_per_side_needed_for_prereg": 257,
+  "corrected_threshold": 0.56
+}

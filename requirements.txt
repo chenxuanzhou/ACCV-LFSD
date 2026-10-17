@@ -1,0 +1,25 @@
+# Exact versions the results in this repository were produced with
+# (Python 3.12.10, Windows 11, one 8 GB RTX 4060 Laptop GPU).
+#
+# Install PyTorch first, matching your CUDA, e.g. for CUDA 12.6:
+#   pip install torch==2.14.0 torchvision==0.29.0 --index-url https://download.pytorch.org/whl/cu126
+# then:
+#   pip install -r requirements.txt
+torch==2.14.0
+torchvision==0.29.0
+numpy==2.5.2
+pandas==2.3.3
+pyarrow==25.0.1
+scipy==1.18.1
+scikit-learn==1.9.0
+matplotlib==3.11.1
+PyYAML==6.0.3
+timm==1.0.29
+open_clip_torch==3.3.0
+huggingface_hub==1.29.0
+pillow==12.3.0
+tqdm==4.70.0
+tabulate==0.10.0
+# required by the upstream voraus-AD code (ref/voraus-ad-dataset) used for MVT-Flow
+pydantic==2.13.5
+FrEIA @ git+https://github.com/VLL-HD/FrEIA@14484f1f875d5c4fedb9c4ff9d7eaa3f276bf150

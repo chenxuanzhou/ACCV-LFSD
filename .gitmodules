@@ -1,0 +1,3 @@
+[submodule "ref/voraus-ad-dataset"]
+	path = ref/voraus-ad-dataset
+	url = https://github.com/vorausrobotik/voraus-ad-dataset.git

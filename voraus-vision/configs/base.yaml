@@ -1,0 +1,30 @@
+# Frozen experiment configuration for SmallData-CV 2026 / voraus-vision.
+# Anything in this file is fixed before the main runs (pre-registration, plan sec. 8).
+
+dataset:
+  path: ../data/voraus-ad-dataset-100hz.parquet
+  sampling_rate_hz: 100
+  train_variant: PRE_A          # official split: setting==PRE_A is train, rest is test
+
+data:
+  L: 512                        # resample length for the signal-domain window (D2)
+  L_pair: 224                   # time resolution for pairwise-matrix encodings (GAF/RP)
+  var_threshold: 1.0e-8         # D1 constant-channel rejection
+  nunique_threshold: 3
+  holdout_frac: 0.20            # fraction of train-normal held out for fault injection
+  seeds: [0, 1, 2, 3, 4]
+  k_shots: [1, 2, 4, 8, 16]     # plus "all"
+
+pca:
+  n_components: 3
+  standardize_before_pca: true  # z-score with train stats, then PCA (keeps P1/P2 exact)
+
+encodings:
+  image_size: 224
+  stft:
+    nperseg: 64
+    noverlap: 32
+  rp:
+    percentile: 10              # epsilon = 10th pct of the window's distance distribution
+  gaf_tile:
+    top_k_channels: 9           # E4: 3x3 grid

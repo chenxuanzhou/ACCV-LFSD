@@ -1,0 +1,36 @@
+{
+  "n_fit_windows": 758,
+  "n_channels": 129,
+  "pca_explained_variance_ratio": [
+    0.19396238284937278,
+    0.16028548743627546,
+    0.11943955920772863
+  ],
+  "pca_evr_sum": 0.4736874294933769,
+  "rp_dist_scale": 9.713188229941668,
+  "stft_mean": 0.9524388717494581,
+  "stft_std": 1.0609614311778301,
+  "e4_rendered_channels": [
+    "motor_torque_2",
+    "power_motor_el_1",
+    "power_motor_mech_1",
+    "power_motor_el_2",
+    "motor_torque_1",
+    "power_motor_mech_2",
+    "power_motor_el_3",
+    "motor_torque_3",
+    "computed_torque_2"
+  ],
+  "e4_rendered_channel_indices": [
+    35,
+    19,
+    20,
+    40,
+    14,
+    41,
+    61,
+    56,
+    30
+  ],
+  "L_pair": 224
+}

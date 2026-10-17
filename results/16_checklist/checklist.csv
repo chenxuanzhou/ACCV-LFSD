@@ -1,0 +1,155 @@
+encoding,encoding_description,fault,fault_description,channels_affected,status,basis,best_auroc,matched_control,matched_control_auroc
+E1,"signal heatmap, per-window min-max (129 ch)",S1,per-channel constant offset,1,blind (proved),rendered images are byte-identical,0.5,S7+S8,0.5365070145652757
+E1,"signal heatmap, per-window min-max (129 ch)",S2,per-channel gain,1,blind (proved),rendered images are byte-identical,0.5,S7+S8,0.5365070145652757
+E1,"signal heatmap, per-window min-max (129 ch)",S3,uniform scaling (raw),129,blind (proved),rendered images are byte-identical,0.5000692520775623,S7g+S8g,0.9998869806094184
+E1,"signal heatmap, per-window min-max (129 ch)",S3b,uniform scaling (about the mean),129,blind (proved),rendered images are byte-identical,0.5001108033240997,S7g+S8g,0.9998869806094184
+E1,"signal heatmap, per-window min-max (129 ch)",S4,single-channel time shift,1,partial,best AUROC 0.65,0.6520360110803324,S7+S8,0.5365070145652757
+E1,"signal heatmap, per-window min-max (129 ch)",S4b,global time shift,129,visible,best AUROC 1.00,1.0,S7g+S8g,0.9998869806094184
+E1,"signal heatmap, per-window min-max (129 ch)",S5,cycle-duration drift,129,partial,best AUROC 0.53,0.5349307479224377,S7g+S8g,0.9998869806094184
+E1,"signal heatmap, per-window min-max (129 ch)",S6,local per-channel offset,1,partial,best AUROC 0.58,0.5781994459833795,S7+S8,0.5365070145652757
+E1,"signal heatmap, per-window min-max (129 ch)",S7,"transient spike, 1 channel",1,partial,best AUROC 0.63,0.6255124653739612,S7+S8,0.5365070145652757
+E1,"signal heatmap, per-window min-max (129 ch)",S7g,"transient spike, all channels",129,visible,best AUROC 1.00,1.0,S7g+S8g,0.9998869806094184
+E1,"signal heatmap, per-window min-max (129 ch)",S7m,"transient spike, 8 channels",8,visible,best AUROC 0.92,0.915623268698061,S7m+S8m,0.7222814404432133
+E1,"signal heatmap, per-window min-max (129 ch)",S8,"freeze / hold, 1 channel",1,partial,best AUROC 0.53,0.5329501385041551,S7+S8,0.5365070145652757
+E1,"signal heatmap, per-window min-max (129 ch)",S8g,"freeze / hold, all channels",129,visible,best AUROC 0.98,0.977202216066482,S7g+S8g,0.9998869806094184
+E1,"signal heatmap, per-window min-max (129 ch)",S8m,"freeze / hold, 8 channels",8,partial,best AUROC 0.65,0.6456509695290858,S7m+S8m,0.7222814404432133
+E10,"signal heatmap, per-window min-max (28 ch)",S1,per-channel constant offset,1,blind (proved),rendered images are byte-identical,0.5,S7+S8,0.5329452238405862
+E10,"signal heatmap, per-window min-max (28 ch)",S2,per-channel gain,1,blind (proved),rendered images are byte-identical,0.5,S7+S8,0.5329452238405862
+E10,"signal heatmap, per-window min-max (28 ch)",S3,uniform scaling (raw),129,blind (proved),rendered images are byte-identical,0.5,S7g+S8g,0.9998293628808864
+E10,"signal heatmap, per-window min-max (28 ch)",S3b,uniform scaling (about the mean),129,blind (proved),rendered images are byte-identical,0.5000415512465374,S7g+S8g,0.9998293628808864
+E10,"signal heatmap, per-window min-max (28 ch)",S4,single-channel time shift,1,partial,best AUROC 0.62,0.6184349030470914,S7+S8,0.5329452238405862
+E10,"signal heatmap, per-window min-max (28 ch)",S4b,global time shift,129,visible,best AUROC 1.00,1.0,S7g+S8g,0.9998293628808864
+E10,"signal heatmap, per-window min-max (28 ch)",S5,cycle-duration drift,129,partial,best AUROC 0.59,0.5936011080332411,S7g+S8g,0.9998293628808864
+E10,"signal heatmap, per-window min-max (28 ch)",S6,local per-channel offset,1,partial,best AUROC 0.59,0.588240997229917,S7+S8,0.5329452238405862
+E10,"signal heatmap, per-window min-max (28 ch)",S7,"transient spike, 1 channel",1,partial,best AUROC 0.57,0.573005540166205,S7+S8,0.5329452238405862
+E10,"signal heatmap, per-window min-max (28 ch)",S7g,"transient spike, all channels",129,visible,best AUROC 1.00,1.0,S7g+S8g,0.9998293628808864
+E10,"signal heatmap, per-window min-max (28 ch)",S7m,"transient spike, 8 channels",8,visible,best AUROC 0.88,0.8786980609418283,S7m+S8m,0.7027102493074793
+E10,"signal heatmap, per-window min-max (28 ch)",S8,"freeze / hold, 1 channel",1,partial,best AUROC 0.54,0.5424515235457064,S7+S8,0.5329452238405862
+E10,"signal heatmap, per-window min-max (28 ch)",S8g,"freeze / hold, all channels",129,visible,best AUROC 0.99,0.9931163434903048,S7g+S8g,0.9998293628808864
+E10,"signal heatmap, per-window min-max (28 ch)",S8m,"freeze / hold, 8 channels",8,partial,best AUROC 0.74,0.7370221606648198,S7m+S8m,0.7027102493074793
+E11,"signal heatmap, train z-score (28 ch)",S1,per-channel constant offset,1,partial,best AUROC 0.61,0.6108033240997229,S7+S8,0.5215633098025199
+E11,"signal heatmap, train z-score (28 ch)",S2,per-channel gain,1,partial,best AUROC 0.56,0.5596537396121883,S7+S8,0.5215633098025199
+E11,"signal heatmap, train z-score (28 ch)",S3,uniform scaling (raw),129,visible,best AUROC 1.00,1.0,S7g+S8g,0.997580055401662
+E11,"signal heatmap, train z-score (28 ch)",S3b,uniform scaling (about the mean),129,visible,best AUROC 0.99,0.9920498614958448,S7g+S8g,0.997580055401662
+E11,"signal heatmap, train z-score (28 ch)",S4,single-channel time shift,1,partial,best AUROC 0.61,0.614196675900277,S7+S8,0.5215633098025199
+E11,"signal heatmap, train z-score (28 ch)",S4b,global time shift,129,visible,best AUROC 1.00,1.0,S7g+S8g,0.997580055401662
+E11,"signal heatmap, train z-score (28 ch)",S5,cycle-duration drift,129,partial,best AUROC 0.70,0.703628808864266,S7g+S8g,0.997580055401662
+E11,"signal heatmap, train z-score (28 ch)",S6,local per-channel offset,1,partial,best AUROC 0.61,0.6136703601108033,S7+S8,0.5215633098025199
+E11,"signal heatmap, train z-score (28 ch)",S7,"transient spike, 1 channel",1,partial,best AUROC 0.57,0.5709972299168975,S7+S8,0.5215633098025199
+E11,"signal heatmap, train z-score (28 ch)",S7g,"transient spike, all channels",129,visible,best AUROC 1.00,1.0,S7g+S8g,0.997580055401662
+E11,"signal heatmap, train z-score (28 ch)",S7m,"transient spike, 8 channels",8,visible,best AUROC 0.81,0.8114681440443213,S7m+S8m,0.6389058171745152
+E11,"signal heatmap, train z-score (28 ch)",S8,"freeze / hold, 1 channel",1,partial,best AUROC 0.54,0.5396814404432133,S7+S8,0.5215633098025199
+E11,"signal heatmap, train z-score (28 ch)",S8g,"freeze / hold, all channels",129,visible,best AUROC 1.00,0.9965096952908588,S7g+S8g,0.997580055401662
+E11,"signal heatmap, train z-score (28 ch)",S8m,"freeze / hold, 8 channels",8,partial,best AUROC 0.68,0.6836842105263158,S7m+S8m,0.6389058171745152
+E2,"signal heatmap, train z-score (129 ch)",S1,per-channel constant offset,1,visible,best AUROC 1.00,0.9996121883656508,S7+S8,0.5348226253239211
+E2,"signal heatmap, train z-score (129 ch)",S2,per-channel gain,1,partial,best AUROC 0.66,0.663185595567867,S7+S8,0.5348226253239211
+E2,"signal heatmap, train z-score (129 ch)",S3,uniform scaling (raw),129,visible,best AUROC 1.00,1.0,S7g+S8g,0.999601108033241
+E2,"signal heatmap, train z-score (129 ch)",S3b,uniform scaling (about the mean),129,visible,best AUROC 0.97,0.9740304709141274,S7g+S8g,0.999601108033241
+E2,"signal heatmap, train z-score (129 ch)",S4,single-channel time shift,1,visible,best AUROC 0.76,0.758836565096953,S7+S8,0.5348226253239211
+E2,"signal heatmap, train z-score (129 ch)",S4b,global time shift,129,visible,best AUROC 1.00,1.0,S7g+S8g,0.999601108033241
+E2,"signal heatmap, train z-score (129 ch)",S5,cycle-duration drift,129,partial,best AUROC 0.65,0.6543767313019391,S7g+S8g,0.999601108033241
+E2,"signal heatmap, train z-score (129 ch)",S6,local per-channel offset,1,visible,best AUROC 0.83,0.8283518005540166,S7+S8,0.5348226253239211
+E2,"signal heatmap, train z-score (129 ch)",S7,"transient spike, 1 channel",1,partial,best AUROC 0.67,0.6676315789473684,S7+S8,0.5348226253239211
+E2,"signal heatmap, train z-score (129 ch)",S7g,"transient spike, all channels",129,visible,best AUROC 1.00,1.0,S7g+S8g,0.999601108033241
+E2,"signal heatmap, train z-score (129 ch)",S7m,"transient spike, 8 channels",8,visible,best AUROC 0.93,0.931426592797784,S7m+S8m,0.6677695290858726
+E2,"signal heatmap, train z-score (129 ch)",S8,"freeze / hold, 1 channel",1,partial,best AUROC 0.55,0.5521052631578948,S7+S8,0.5348226253239211
+E2,"signal heatmap, train z-score (129 ch)",S8g,"freeze / hold, all channels",129,visible,best AUROC 1.00,0.9998891966759004,S7g+S8g,0.999601108033241
+E2,"signal heatmap, train z-score (129 ch)",S8m,"freeze / hold, 8 channels",8,partial,best AUROC 0.73,0.728393351800554,S7m+S8m,0.6677695290858726
+E3,"GASF on PCA-3, per-window min-max",S1,per-channel constant offset,1,blind (proved),rendered images are byte-identical,0.5,S7+S8,0.5153936198731123
+E3,"GASF on PCA-3, per-window min-max",S2,per-channel gain,1,partial,best AUROC 0.53,0.5337396121883657,S7+S8,0.5153936198731123
+E3,"GASF on PCA-3, per-window min-max",S3,uniform scaling (raw),129,blind (proved),rendered images are byte-identical,0.5,S7g+S8g,0.8945722991689751
+E3,"GASF on PCA-3, per-window min-max",S3b,uniform scaling (about the mean),129,blind (proved),rendered images are byte-identical,0.5,S7g+S8g,0.8945722991689751
+E3,"GASF on PCA-3, per-window min-max",S4,single-channel time shift,1,partial,best AUROC 0.57,0.5724653739612189,S7+S8,0.5153936198731123
+E3,"GASF on PCA-3, per-window min-max",S4b,global time shift,129,visible,best AUROC 1.00,1.0,S7g+S8g,0.8945722991689751
+E3,"GASF on PCA-3, per-window min-max",S5,cycle-duration drift,129,partial,best AUROC 0.55,0.5515235457063712,S7g+S8g,0.8945722991689751
+E3,"GASF on PCA-3, per-window min-max",S6,local per-channel offset,1,partial,best AUROC 0.56,0.5644598337950139,S7+S8,0.5153936198731123
+E3,"GASF on PCA-3, per-window min-max",S7,"transient spike, 1 channel",1,partial,best AUROC 0.58,0.5764265927977839,S7+S8,0.5153936198731123
+E3,"GASF on PCA-3, per-window min-max",S7g,"transient spike, all channels",129,visible,best AUROC 0.92,0.9210526315789476,S7g+S8g,0.8945722991689751
+E3,"GASF on PCA-3, per-window min-max",S7m,"transient spike, 8 channels",8,partial,best AUROC 0.64,0.6390027700831025,S7m+S8m,0.5663368421052631
+E3,"GASF on PCA-3, per-window min-max",S8,"freeze / hold, 1 channel",1,partial,best AUROC 0.51,0.510443213296399,S7+S8,0.5153936198731123
+E3,"GASF on PCA-3, per-window min-max",S8g,"freeze / hold, all channels",129,visible,best AUROC 0.97,0.9665235457063712,S7g+S8g,0.8945722991689751
+E3,"GASF on PCA-3, per-window min-max",S8m,"freeze / hold, 8 channels",8,partial,best AUROC 0.58,0.5774238227146814,S7m+S8m,0.5663368421052631
+E4,"GASF of 9 channels, 3x3 tiles",S1,per-channel constant offset,1,blind (proved),rendered images are byte-identical,0.5,S7+S8,0.5100067018139577
+E4,"GASF of 9 channels, 3x3 tiles",S2,per-channel gain,1,blind (proved),rendered images are byte-identical,0.5,S7+S8,0.5100067018139577
+E4,"GASF of 9 channels, 3x3 tiles",S3,uniform scaling (raw),129,blind (proved),rendered images are byte-identical,0.5,S7g+S8g,0.8126249307479224
+E4,"GASF of 9 channels, 3x3 tiles",S3b,uniform scaling (about the mean),129,blind (proved),rendered images are byte-identical,0.5,S7g+S8g,0.8126249307479224
+E4,"GASF of 9 channels, 3x3 tiles",S4,single-channel time shift,1,partial,best AUROC 0.54,0.5388227146814405,S7+S8,0.5100067018139577
+E4,"GASF of 9 channels, 3x3 tiles",S4b,global time shift,129,visible,best AUROC 1.00,1.0,S7g+S8g,0.8126249307479224
+E4,"GASF of 9 channels, 3x3 tiles",S5,cycle-duration drift,129,partial,best AUROC 0.55,0.5483518005540166,S7g+S8g,0.8126249307479224
+E4,"GASF of 9 channels, 3x3 tiles",S6,local per-channel offset,1,partial,best AUROC 0.53,0.5349030470914128,S7+S8,0.5100067018139577
+E4,"GASF of 9 channels, 3x3 tiles",S7,"transient spike, 1 channel",1,partial,best AUROC 0.51,0.5123268698060941,S7+S8,0.5100067018139577
+E4,"GASF of 9 channels, 3x3 tiles",S7g,"transient spike, all channels",129,visible,best AUROC 0.84,0.8364958448753463,S7g+S8g,0.8126249307479224
+E4,"GASF of 9 channels, 3x3 tiles",S7m,"transient spike, 8 channels",8,partial,best AUROC 0.62,0.6175346260387812,S7m+S8m,0.5503091412742382
+E4,"GASF of 9 channels, 3x3 tiles",S8,"freeze / hold, 1 channel",1,partial,best AUROC 0.52,0.5165927977839335,S7+S8,0.5100067018139577
+E4,"GASF of 9 channels, 3x3 tiles",S8g,"freeze / hold, all channels",129,visible,best AUROC 0.88,0.8789196675900277,S7g+S8g,0.8126249307479224
+E4,"GASF of 9 channels, 3x3 tiles",S8m,"freeze / hold, 8 channels",8,partial,best AUROC 0.58,0.5783240997229917,S7m+S8m,0.5503091412742382
+E5,"recurrence plot, percentile threshold",S1,per-channel constant offset,1,blind (proved),rendered images are byte-identical,0.5,S7+S8,0.5259181485121973
+E5,"recurrence plot, percentile threshold",S2,per-channel gain,1,partial,best AUROC 0.51,0.5145013850415513,S7+S8,0.5259181485121973
+E5,"recurrence plot, percentile threshold",S3,uniform scaling (raw),129,blind (proved),rendered images are byte-identical,0.5,S7g+S8g,0.7979268698060942
+E5,"recurrence plot, percentile threshold",S3b,uniform scaling (about the mean),129,blind (proved),rendered images are byte-identical,0.5,S7g+S8g,0.7979268698060942
+E5,"recurrence plot, percentile threshold",S4,single-channel time shift,1,partial,best AUROC 0.62,0.6170083102493076,S7+S8,0.5259181485121973
+E5,"recurrence plot, percentile threshold",S4b,global time shift,129,visible,best AUROC 1.00,0.9961495844875348,S7g+S8g,0.7979268698060942
+E5,"recurrence plot, percentile threshold",S5,cycle-duration drift,129,partial,best AUROC 0.54,0.5434903047091413,S7g+S8g,0.7979268698060942
+E5,"recurrence plot, percentile threshold",S6,local per-channel offset,1,partial,best AUROC 0.54,0.5412603878116344,S7+S8,0.5259181485121973
+E5,"recurrence plot, percentile threshold",S7,"transient spike, 1 channel",1,partial,best AUROC 0.55,0.5466897506925208,S7+S8,0.5259181485121973
+E5,"recurrence plot, percentile threshold",S7g,"transient spike, all channels",129,partial,best AUROC 0.70,0.7043074792243769,S7g+S8g,0.7979268698060942
+E5,"recurrence plot, percentile threshold",S7m,"transient spike, 8 channels",8,partial,best AUROC 0.66,0.6559279778393352,S7m+S8m,0.5879124653739612
+E5,"recurrence plot, percentile threshold",S8,"freeze / hold, 1 channel",1,partial,best AUROC 0.51,0.51297783933518,S7+S8,0.5259181485121973
+E5,"recurrence plot, percentile threshold",S8g,"freeze / hold, all channels",129,visible,best AUROC 0.88,0.8798891966759002,S7g+S8g,0.7979268698060942
+E5,"recurrence plot, percentile threshold",S8m,"freeze / hold, 8 channels",8,partial,best AUROC 0.55,0.5470083102493074,S7m+S8m,0.5879124653739612
+E6,"recurrence plot, continuous distance",S1,per-channel constant offset,1,blind (proved),rendered images are byte-identical,0.5,S7+S8,0.5534201590563845
+E6,"recurrence plot, continuous distance",S2,per-channel gain,1,partial,best AUROC 0.52,0.5155124653739612,S7+S8,0.5534201590563845
+E6,"recurrence plot, continuous distance",S3,uniform scaling (raw),129,visible,best AUROC 1.00,1.0,S7g+S8g,0.9279218836565096
+E6,"recurrence plot, continuous distance",S3b,uniform scaling (about the mean),129,visible,best AUROC 1.00,1.0,S7g+S8g,0.9279218836565096
+E6,"recurrence plot, continuous distance",S4,single-channel time shift,1,partial,best AUROC 0.62,0.6244875346260388,S7+S8,0.5534201590563845
+E6,"recurrence plot, continuous distance",S4b,global time shift,129,visible,best AUROC 1.00,1.0,S7g+S8g,0.9279218836565096
+E6,"recurrence plot, continuous distance",S5,cycle-duration drift,129,partial,best AUROC 0.63,0.6282686980609419,S7g+S8g,0.9279218836565096
+E6,"recurrence plot, continuous distance",S6,local per-channel offset,1,partial,best AUROC 0.55,0.5469529085872576,S7+S8,0.5534201590563845
+E6,"recurrence plot, continuous distance",S7,"transient spike, 1 channel",1,partial,best AUROC 0.62,0.6226177285318559,S7+S8,0.5534201590563845
+E6,"recurrence plot, continuous distance",S7g,"transient spike, all channels",129,visible,best AUROC 0.93,0.9297506925207756,S7g+S8g,0.9279218836565096
+E6,"recurrence plot, continuous distance",S7m,"transient spike, 8 channels",8,partial,best AUROC 0.68,0.6785041551246538,S7m+S8m,0.6127628808864266
+E6,"recurrence plot, continuous distance",S8,"freeze / hold, 1 channel",1,partial,best AUROC 0.51,0.5133795013850415,S7+S8,0.5534201590563845
+E6,"recurrence plot, continuous distance",S8g,"freeze / hold, all channels",129,visible,best AUROC 0.99,0.989819944598338,S7g+S8g,0.9279218836565096
+E6,"recurrence plot, continuous distance",S8m,"freeze / hold, 8 channels",8,partial,best AUROC 0.56,0.5607202216066483,S7m+S8m,0.6127628808864266
+E7,"STFT log-magnitude, DC kept",S1,per-channel constant offset,1,partial,best AUROC 0.73,0.7349584487534626,S7+S8,0.5150714860155482
+E7,"STFT log-magnitude, DC kept",S2,per-channel gain,1,partial,best AUROC 0.55,0.5531578947368421,S7+S8,0.5150714860155482
+E7,"STFT log-magnitude, DC kept",S3,uniform scaling (raw),129,visible,best AUROC 1.00,1.0,S7g+S8g,0.9251950138504156
+E7,"STFT log-magnitude, DC kept",S3b,uniform scaling (about the mean),129,partial,best AUROC 0.62,0.6158725761772853,S7g+S8g,0.9251950138504156
+E7,"STFT log-magnitude, DC kept",S4,single-channel time shift,1,partial,best AUROC 0.53,0.5269252077562325,S7+S8,0.5150714860155482
+E7,"STFT log-magnitude, DC kept",S4b,global time shift,129,visible,best AUROC 1.00,0.999972299168975,S7g+S8g,0.9251950138504156
+E7,"STFT log-magnitude, DC kept",S5,cycle-duration drift,129,partial,best AUROC 0.55,0.5532963988919668,S7g+S8g,0.9251950138504156
+E7,"STFT log-magnitude, DC kept",S6,local per-channel offset,1,partial,best AUROC 0.55,0.5471468144044321,S7+S8,0.5150714860155482
+E7,"STFT log-magnitude, DC kept",S7,"transient spike, 1 channel",1,partial,best AUROC 0.58,0.577382271468144,S7+S8,0.5150714860155482
+E7,"STFT log-magnitude, DC kept",S7g,"transient spike, all channels",129,visible,best AUROC 0.98,0.9766897506925208,S7g+S8g,0.9251950138504156
+E7,"STFT log-magnitude, DC kept",S7m,"transient spike, 8 channels",8,partial,best AUROC 0.68,0.6847091412742381,S7m+S8m,0.5646365650969529
+E7,"STFT log-magnitude, DC kept",S8,"freeze / hold, 1 channel",1,partial,best AUROC 0.51,0.5082271468144044,S7+S8,0.5150714860155482
+E7,"STFT log-magnitude, DC kept",S8g,"freeze / hold, all channels",129,visible,best AUROC 0.98,0.9804432132963988,S7g+S8g,0.9251950138504156
+E7,"STFT log-magnitude, DC kept",S8m,"freeze / hold, 8 channels",8,partial,best AUROC 0.57,0.5674515235457064,S7m+S8m,0.5646365650969529
+E8,"STFT log-magnitude, DC dropped",S1,per-channel constant offset,1,partial,best AUROC 0.57,0.5714127423822715,S7+S8,0.5145062997051202
+E8,"STFT log-magnitude, DC dropped",S2,per-channel gain,1,partial,best AUROC 0.55,0.5487811634349031,S7+S8,0.5145062997051202
+E8,"STFT log-magnitude, DC dropped",S3,uniform scaling (raw),129,visible,best AUROC 1.00,1.0,S7g+S8g,0.9353274238227146
+E8,"STFT log-magnitude, DC dropped",S3b,uniform scaling (about the mean),129,partial,best AUROC 0.71,0.7068975069252078,S7g+S8g,0.9353274238227146
+E8,"STFT log-magnitude, DC dropped",S4,single-channel time shift,1,partial,best AUROC 0.54,0.5409972299168975,S7+S8,0.5145062997051202
+E8,"STFT log-magnitude, DC dropped",S4b,global time shift,129,visible,best AUROC 1.00,1.0,S7g+S8g,0.9353274238227146
+E8,"STFT log-magnitude, DC dropped",S5,cycle-duration drift,129,partial,best AUROC 0.55,0.5474238227146814,S7g+S8g,0.9353274238227146
+E8,"STFT log-magnitude, DC dropped",S6,local per-channel offset,1,partial,best AUROC 0.51,0.5117313019390581,S7+S8,0.5145062997051202
+E8,"STFT log-magnitude, DC dropped",S7,"transient spike, 1 channel",1,partial,best AUROC 0.58,0.5822576177285319,S7+S8,0.5145062997051202
+E8,"STFT log-magnitude, DC dropped",S7g,"transient spike, all channels",129,visible,best AUROC 0.98,0.9776592797783932,S7g+S8g,0.9353274238227146
+E8,"STFT log-magnitude, DC dropped",S7m,"transient spike, 8 channels",8,partial,best AUROC 0.69,0.6890997229916898,S7m+S8m,0.5659523545706371
+E8,"STFT log-magnitude, DC dropped",S8,"freeze / hold, 1 channel",1,partial,best AUROC 0.51,0.5067174515235457,S7+S8,0.5145062997051202
+E8,"STFT log-magnitude, DC dropped",S8g,"freeze / hold, all channels",129,visible,best AUROC 0.99,0.987797783933518,S7g+S8g,0.9353274238227146
+E8,"STFT log-magnitude, DC dropped",S8m,"freeze / hold, 8 channels",8,partial,best AUROC 0.56,0.5619252077562327,S7m+S8m,0.5659523545706371
+E9,"GASF on PCA-3, train-global min-max",S1,per-channel constant offset,1,partial,best AUROC 0.73,0.7294182825484764,S7+S8,0.5181011527120006
+E9,"GASF on PCA-3, train-global min-max",S2,per-channel gain,1,partial,best AUROC 0.57,0.5694736842105264,S7+S8,0.5181011527120006
+E9,"GASF on PCA-3, train-global min-max",S3,uniform scaling (raw),129,visible,best AUROC 1.00,1.0,S7g+S8g,0.8905501385041551
+E9,"GASF on PCA-3, train-global min-max",S3b,uniform scaling (about the mean),129,visible,best AUROC 1.00,1.0,S7g+S8g,0.8905501385041551
+E9,"GASF on PCA-3, train-global min-max",S4,single-channel time shift,1,partial,best AUROC 0.55,0.5547645429362881,S7+S8,0.5181011527120006
+E9,"GASF on PCA-3, train-global min-max",S4b,global time shift,129,visible,best AUROC 1.00,1.0,S7g+S8g,0.8905501385041551
+E9,"GASF on PCA-3, train-global min-max",S5,cycle-duration drift,129,partial,best AUROC 0.56,0.5630193905817175,S7g+S8g,0.8905501385041551
+E9,"GASF on PCA-3, train-global min-max",S6,local per-channel offset,1,partial,best AUROC 0.54,0.5438919667590026,S7+S8,0.5181011527120006
+E9,"GASF on PCA-3, train-global min-max",S7,"transient spike, 1 channel",1,partial,best AUROC 0.60,0.5957202216066483,S7+S8,0.5181011527120006
+E9,"GASF on PCA-3, train-global min-max",S7g,"transient spike, all channels",129,visible,best AUROC 0.96,0.9559002770083102,S7g+S8g,0.8905501385041551
+E9,"GASF on PCA-3, train-global min-max",S7m,"transient spike, 8 channels",8,partial,best AUROC 0.63,0.6341551246537396,S7m+S8m,0.5591772853185596
+E9,"GASF on PCA-3, train-global min-max",S8,"freeze / hold, 1 channel",1,partial,best AUROC 0.51,0.5110664819944599,S7+S8,0.5181011527120006
+E9,"GASF on PCA-3, train-global min-max",S8g,"freeze / hold, all channels",129,visible,best AUROC 0.98,0.9776592797783932,S7g+S8g,0.8905501385041551
+E9,"GASF on PCA-3, train-global min-max",S8m,"freeze / hold, 8 channels",8,partial,best AUROC 0.57,0.5654709141274239,S7m+S8m,0.5591772853185596

@@ -1,0 +1,13 @@
+# Normalise text to LF in the repository; shell scripts must stay LF on every OS.
+* text=auto
+*.py text eol=lf
+*.sh text eol=lf
+*.yaml text eol=lf
+*.md text eol=lf
+*.csv text eol=lf
+*.json text eol=lf
+
+# Binary result files: never diff, never convert.
+*.parquet binary
+*.npz binary
+*.npy binary
